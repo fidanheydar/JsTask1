@@ -3,7 +3,6 @@ let box=document.querySelector(".box");
 let countX,countY=0;
 
 document.addEventListener("keyup", function(e) {
-   
     if (e.key == "ArrowRight" && countX < box.clientWidth - circle.offsetWidth) {
         countX += 10;
         circle.style.left = countX + "px";
@@ -21,8 +20,9 @@ document.addEventListener("keyup", function(e) {
         circle.style.top = countY + "px";
     }
 })
+
+
 document.addEventListener("keydown", function(e) {
-   
     if (e.key == "ArrowRight" && countX < box.clientWidth - circle.offsetWidth) {
         countX += 10;
         circle.style.left = countX + "px";
